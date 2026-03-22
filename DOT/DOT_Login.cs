@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DOT
 {
-    public class Class1
+    public class DOT_Login
     {
     }
 }

@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_ChamDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ChamDiem.Designer.cs">
+      <DependentUpon>GUI_ChamDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DiemDanh.Designer.cs">
+      <DependentUpon>GUI_DiemDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DKKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DKKH.Designer.cs">
+      <DependentUpon>GUI_DKKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_GV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_GV.Designer.cs">
+      <DependentUpon>GUI_GV.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_HV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +82,26 @@
     <Compile Include="GUI_Login.Designer.cs">
       <DependentUpon>GUI_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_TimKQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_TimKQ.Designer.cs">
+      <DependentUpon>GUI_TimKQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_DKKH.resx">
+      <DependentUpon>GUI_DKKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_GV.resx">
+      <DependentUpon>GUI_GV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV.resx">
+      <DependentUpon>GUI_HV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_TimKQ.resx">
+      <DependentUpon>GUI_TimKQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

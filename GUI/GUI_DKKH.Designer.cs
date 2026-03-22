@@ -35,6 +35,7 @@ namespace GUI
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.bt_dangXuat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +73,7 @@ namespace GUI
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(32, 19);
+            this.checkedListBox1.Location = new System.Drawing.Point(41, 19);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(550, 469);
             this.checkedListBox1.TabIndex = 0;
@@ -80,7 +81,7 @@ namespace GUI
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(621, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(614, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(550, 469);
             this.dataGridView1.TabIndex = 1;
@@ -95,12 +96,23 @@ namespace GUI
             this.label2.TabIndex = 5;
             this.label2.Text = "TỔNG HỌC PHÍ";
             // 
+            // bt_dangXuat
+            // 
+            this.bt_dangXuat.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.bt_dangXuat.Location = new System.Drawing.Point(1164, 12);
+            this.bt_dangXuat.Name = "bt_dangXuat";
+            this.bt_dangXuat.Size = new System.Drawing.Size(88, 27);
+            this.bt_dangXuat.TabIndex = 7;
+            this.bt_dangXuat.Text = "Quay lại";
+            this.bt_dangXuat.UseVisualStyleBackColor = false;
+            // 
             // GUI_DKKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.bt_dangXuat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -121,5 +133,6 @@ namespace GUI
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button bt_dangXuat;
     }
 }
