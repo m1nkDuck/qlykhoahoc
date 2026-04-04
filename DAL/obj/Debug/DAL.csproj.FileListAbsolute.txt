@@ -1,0 +1,9 @@
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\bin\Debug\DOT.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\bin\Debug\DOT.pdb
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DAL\obj\Debug\DAL.pdb

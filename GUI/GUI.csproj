@@ -102,6 +102,12 @@
     <EmbeddedResource Include="GUI_HV.resx">
       <DependentUpon>GUI_HV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Register.resx">
+      <DependentUpon>GUI_Register.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_TimKQ.resx">
       <DependentUpon>GUI_TimKQ.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +132,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{b5f58feb-bb1e-4111-9ff4-482e5790c57c}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DOT\DOT.csproj">
+      <Project>{180fb908-251e-4470-8c6c-c349200a1273}</Project>
+      <Name>DOT</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

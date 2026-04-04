@@ -41,10 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_DangKy.cs" />
     <Compile Include="BLL_GV.cs" />
     <Compile Include="BLL_HV.cs" />
     <Compile Include="BLL_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{3622c58c-3142-40a0-9984-f842bbf6708c}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DOT\DOT.csproj">
+      <Project>{180fb908-251e-4470-8c6c-c349200a1273}</Project>
+      <Name>DOT</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,11 @@
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\bin\Debug\BLL.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\bin\Debug\BLL.pdb
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\bin\Debug\DOT.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\bin\Debug\DOT.pdb
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\obj\Debug\BLL.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\BLL\obj\Debug\BLL.pdb

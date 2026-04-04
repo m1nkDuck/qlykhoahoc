@@ -1,15 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.36631.11
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{649FFAA0-7ABC-4521-A249-C0CDB3F7E6DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{180FB908-251E-4470-8C6C-C349200A1273} = {180FB908-251E-4470-8C6C-C349200A1273}
+		{B5F58FEB-BB1E-4111-9FF4-482E5790C57C} = {B5F58FEB-BB1E-4111-9FF4-482E5790C57C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{B5F58FEB-BB1E-4111-9FF4-482E5790C57C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{180FB908-251E-4470-8C6C-C349200A1273} = {180FB908-251E-4470-8C6C-C349200A1273}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOT", "DOT\DOT.csproj", "{180FB908-251E-4470-8C6C-C349200A1273}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{3622C58C-3142-40A0-9984-F842BBF6708C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{180FB908-251E-4470-8C6C-C349200A1273} = {180FB908-251E-4470-8C6C-C349200A1273}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

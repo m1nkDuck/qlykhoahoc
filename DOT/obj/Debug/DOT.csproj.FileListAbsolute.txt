@@ -1,0 +1,6 @@
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DOT\bin\Debug\DOT.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DOT\bin\Debug\DOT.pdb
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DOT\obj\Debug\DOT.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DOT\obj\Debug\DOT.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DOT\obj\Debug\DOT.dll
+C:\Users\ADMIN\Source\Repos\qlykhoahoc\DOT\obj\Debug\DOT.pdb

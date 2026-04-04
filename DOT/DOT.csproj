@@ -44,6 +44,7 @@
     <Compile Include="DOL_GV.cs" />
     <Compile Include="DOT_HV.cs" />
     <Compile Include="DOT_Login.cs" />
+    <Compile Include="DOT_Taikhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

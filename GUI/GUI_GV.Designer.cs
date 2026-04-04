@@ -74,6 +74,7 @@ namespace GUI
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // lblTitle
             // 
@@ -82,7 +83,7 @@ namespace GUI
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(20, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(338, 37);
+            this.lblTitle.Size = new System.Drawing.Size(425, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "TRANG CHỦ GIẢNG VIÊN";
             // 
@@ -108,10 +109,11 @@ namespace GUI
             this.dgvLichDay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLichDay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLichDay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLichDay.Location = new System.Drawing.Point(10, 32);
+            this.dgvLichDay.Location = new System.Drawing.Point(10, 37);
             this.dgvLichDay.Name = "dgvLichDay";
             this.dgvLichDay.ReadOnly = true;
-            this.dgvLichDay.Size = new System.Drawing.Size(680, 288);
+            this.dgvLichDay.RowHeadersWidth = 51;
+            this.dgvLichDay.Size = new System.Drawing.Size(680, 283);
             this.dgvLichDay.TabIndex = 0;
             // 
             // gbxLichThi
@@ -136,10 +138,11 @@ namespace GUI
             this.dgvLichThi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLichThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLichThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLichThi.Location = new System.Drawing.Point(10, 32);
+            this.dgvLichThi.Location = new System.Drawing.Point(10, 37);
             this.dgvLichThi.Name = "dgvLichThi";
             this.dgvLichThi.ReadOnly = true;
-            this.dgvLichThi.Size = new System.Drawing.Size(680, 308);
+            this.dgvLichThi.RowHeadersWidth = 51;
+            this.dgvLichThi.Size = new System.Drawing.Size(680, 303);
             this.dgvLichThi.TabIndex = 0;
             // 
             // gbxThongTin
@@ -175,7 +178,7 @@ namespace GUI
             this.valNgoaiNgu.ForeColor = System.Drawing.Color.Black;
             this.valNgoaiNgu.Location = new System.Drawing.Point(160, 280);
             this.valNgoaiNgu.Name = "valNgoaiNgu";
-            this.valNgoaiNgu.Size = new System.Drawing.Size(21, 20);
+            this.valNgoaiNgu.Size = new System.Drawing.Size(27, 25);
             this.valNgoaiNgu.TabIndex = 0;
             this.valNgoaiNgu.Text = "...";
             // 
@@ -186,7 +189,7 @@ namespace GUI
             this.lblNgoaiNgu.ForeColor = System.Drawing.Color.Gray;
             this.lblNgoaiNgu.Location = new System.Drawing.Point(20, 280);
             this.lblNgoaiNgu.Name = "lblNgoaiNgu";
-            this.lblNgoaiNgu.Size = new System.Drawing.Size(111, 20);
+            this.lblNgoaiNgu.Size = new System.Drawing.Size(140, 25);
             this.lblNgoaiNgu.TabIndex = 1;
             this.lblNgoaiNgu.Text = "Ngoại ngữ dạy:";
             // 
@@ -197,7 +200,7 @@ namespace GUI
             this.valTrinhDo.ForeColor = System.Drawing.Color.Black;
             this.valTrinhDo.Location = new System.Drawing.Point(160, 240);
             this.valTrinhDo.Name = "valTrinhDo";
-            this.valTrinhDo.Size = new System.Drawing.Size(21, 20);
+            this.valTrinhDo.Size = new System.Drawing.Size(27, 25);
             this.valTrinhDo.TabIndex = 2;
             this.valTrinhDo.Text = "...";
             // 
@@ -208,7 +211,7 @@ namespace GUI
             this.lblTrinhDo.ForeColor = System.Drawing.Color.Gray;
             this.lblTrinhDo.Location = new System.Drawing.Point(20, 240);
             this.lblTrinhDo.Name = "lblTrinhDo";
-            this.lblTrinhDo.Size = new System.Drawing.Size(66, 20);
+            this.lblTrinhDo.Size = new System.Drawing.Size(85, 25);
             this.lblTrinhDo.TabIndex = 3;
             this.lblTrinhDo.Text = "Trình độ:";
             // 
@@ -219,7 +222,7 @@ namespace GUI
             this.valEmail.ForeColor = System.Drawing.Color.Black;
             this.valEmail.Location = new System.Drawing.Point(160, 200);
             this.valEmail.Name = "valEmail";
-            this.valEmail.Size = new System.Drawing.Size(21, 20);
+            this.valEmail.Size = new System.Drawing.Size(27, 25);
             this.valEmail.TabIndex = 4;
             this.valEmail.Text = "...";
             // 
@@ -230,7 +233,7 @@ namespace GUI
             this.lblEmail.ForeColor = System.Drawing.Color.Gray;
             this.lblEmail.Location = new System.Drawing.Point(20, 200);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(49, 20);
+            this.lblEmail.Size = new System.Drawing.Size(62, 25);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email:";
             // 
@@ -241,7 +244,7 @@ namespace GUI
             this.valSDT.ForeColor = System.Drawing.Color.Black;
             this.valSDT.Location = new System.Drawing.Point(160, 160);
             this.valSDT.Name = "valSDT";
-            this.valSDT.Size = new System.Drawing.Size(21, 20);
+            this.valSDT.Size = new System.Drawing.Size(27, 25);
             this.valSDT.TabIndex = 6;
             this.valSDT.Text = "...";
             // 
@@ -252,7 +255,7 @@ namespace GUI
             this.lblSDT.ForeColor = System.Drawing.Color.Gray;
             this.lblSDT.Location = new System.Drawing.Point(20, 160);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(100, 20);
+            this.lblSDT.Size = new System.Drawing.Size(127, 25);
             this.lblSDT.TabIndex = 7;
             this.lblSDT.Text = "Số điện thoại:";
             // 
@@ -263,7 +266,7 @@ namespace GUI
             this.valGioiTinh.ForeColor = System.Drawing.Color.Black;
             this.valGioiTinh.Location = new System.Drawing.Point(160, 120);
             this.valGioiTinh.Name = "valGioiTinh";
-            this.valGioiTinh.Size = new System.Drawing.Size(21, 20);
+            this.valGioiTinh.Size = new System.Drawing.Size(27, 25);
             this.valGioiTinh.TabIndex = 8;
             this.valGioiTinh.Text = "...";
             // 
@@ -274,7 +277,7 @@ namespace GUI
             this.lblGioiTinh.ForeColor = System.Drawing.Color.Gray;
             this.lblGioiTinh.Location = new System.Drawing.Point(20, 120);
             this.lblGioiTinh.Name = "lblGioiTinh";
-            this.lblGioiTinh.Size = new System.Drawing.Size(68, 20);
+            this.lblGioiTinh.Size = new System.Drawing.Size(88, 25);
             this.lblGioiTinh.TabIndex = 9;
             this.lblGioiTinh.Text = "Giới tính:";
             // 
@@ -285,7 +288,7 @@ namespace GUI
             this.valTen.ForeColor = System.Drawing.Color.Black;
             this.valTen.Location = new System.Drawing.Point(160, 80);
             this.valTen.Name = "valTen";
-            this.valTen.Size = new System.Drawing.Size(21, 20);
+            this.valTen.Size = new System.Drawing.Size(27, 25);
             this.valTen.TabIndex = 10;
             this.valTen.Text = "...";
             // 
@@ -296,7 +299,7 @@ namespace GUI
             this.lblTen.ForeColor = System.Drawing.Color.Gray;
             this.lblTen.Location = new System.Drawing.Point(20, 80);
             this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(76, 20);
+            this.lblTen.Size = new System.Drawing.Size(96, 25);
             this.lblTen.TabIndex = 11;
             this.lblTen.Text = "Họ và tên:";
             // 
@@ -307,7 +310,7 @@ namespace GUI
             this.valMaGV.ForeColor = System.Drawing.Color.Black;
             this.valMaGV.Location = new System.Drawing.Point(160, 40);
             this.valMaGV.Name = "valMaGV";
-            this.valMaGV.Size = new System.Drawing.Size(21, 20);
+            this.valMaGV.Size = new System.Drawing.Size(27, 25);
             this.valMaGV.TabIndex = 12;
             this.valMaGV.Text = "...";
             // 
@@ -318,7 +321,7 @@ namespace GUI
             this.lblMaGV.ForeColor = System.Drawing.Color.Gray;
             this.lblMaGV.Location = new System.Drawing.Point(20, 40);
             this.lblMaGV.Name = "lblMaGV";
-            this.lblMaGV.Size = new System.Drawing.Size(106, 20);
+            this.lblMaGV.Size = new System.Drawing.Size(136, 25);
             this.lblMaGV.TabIndex = 13;
             this.lblMaGV.Text = "Mã giảng viên:";
             // 
@@ -338,7 +341,7 @@ namespace GUI
             // 
             // GUI_GV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1140, 825);

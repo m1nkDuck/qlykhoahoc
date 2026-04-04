@@ -26,6 +26,9 @@ namespace GUI
             this.gbxLichThi = new System.Windows.Forms.GroupBox();
             this.dgvLichThi = new System.Windows.Forms.DataGridView();
             this.gbxThongTin = new System.Windows.Forms.GroupBox();
+            this.valdiachi = new System.Windows.Forms.Label();
+            this.lbldiachi = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.valEmail = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.valSDT = new System.Windows.Forms.Label();
@@ -73,6 +76,7 @@ namespace GUI
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // lblTitle
             // 
@@ -81,7 +85,7 @@ namespace GUI
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(20, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(309, 37);
+            this.lblTitle.Size = new System.Drawing.Size(388, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "TRANG CHỦ HỌC VIÊN";
             // 
@@ -107,10 +111,11 @@ namespace GUI
             this.dgvLichHoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLichHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLichHoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLichHoc.Location = new System.Drawing.Point(10, 32);
+            this.dgvLichHoc.Location = new System.Drawing.Point(10, 37);
             this.dgvLichHoc.Name = "dgvLichHoc";
             this.dgvLichHoc.ReadOnly = true;
-            this.dgvLichHoc.Size = new System.Drawing.Size(680, 288);
+            this.dgvLichHoc.RowHeadersWidth = 51;
+            this.dgvLichHoc.Size = new System.Drawing.Size(680, 283);
             this.dgvLichHoc.TabIndex = 0;
             // 
             // gbxLichThi
@@ -135,15 +140,19 @@ namespace GUI
             this.dgvLichThi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLichThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLichThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLichThi.Location = new System.Drawing.Point(10, 32);
+            this.dgvLichThi.Location = new System.Drawing.Point(10, 37);
             this.dgvLichThi.Name = "dgvLichThi";
             this.dgvLichThi.ReadOnly = true;
-            this.dgvLichThi.Size = new System.Drawing.Size(680, 308);
+            this.dgvLichThi.RowHeadersWidth = 51;
+            this.dgvLichThi.Size = new System.Drawing.Size(680, 303);
             this.dgvLichThi.TabIndex = 0;
             // 
             // gbxThongTin
             // 
             this.gbxThongTin.BackColor = System.Drawing.Color.White;
+            this.gbxThongTin.Controls.Add(this.valdiachi);
+            this.gbxThongTin.Controls.Add(this.lbldiachi);
+            this.gbxThongTin.Controls.Add(this.label1);
             this.gbxThongTin.Controls.Add(this.valEmail);
             this.gbxThongTin.Controls.Add(this.lblEmail);
             this.gbxThongTin.Controls.Add(this.valSDT);
@@ -164,15 +173,48 @@ namespace GUI
             this.gbxThongTin.TabIndex = 3;
             this.gbxThongTin.TabStop = false;
             this.gbxThongTin.Text = "Thông Tin Học Viên";
+            this.gbxThongTin.Enter += new System.EventHandler(this.gbxThongTin_Enter);
+            // 
+            // valdiachi
+            // 
+            this.valdiachi.AutoSize = true;
+            this.valdiachi.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valdiachi.ForeColor = System.Drawing.Color.Black;
+            this.valdiachi.Location = new System.Drawing.Point(140, 213);
+            this.valdiachi.Name = "valdiachi";
+            this.valdiachi.Size = new System.Drawing.Size(27, 25);
+            this.valdiachi.TabIndex = 14;
+            this.valdiachi.Text = "...";
+            // 
+            // lbldiachi
+            // 
+            this.lbldiachi.AutoSize = true;
+            this.lbldiachi.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldiachi.ForeColor = System.Drawing.Color.Gray;
+            this.lbldiachi.Location = new System.Drawing.Point(20, 213);
+            this.lbldiachi.Name = "lbldiachi";
+            this.lbldiachi.Size = new System.Drawing.Size(70, 25);
+            this.lbldiachi.TabIndex = 13;
+            this.lbldiachi.Text = "Địa chỉ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(20, 213);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 25);
+            this.label1.TabIndex = 12;
             // 
             // valEmail
             // 
             this.valEmail.AutoSize = true;
             this.valEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valEmail.ForeColor = System.Drawing.Color.Black;
-            this.valEmail.Location = new System.Drawing.Point(140, 250);
+            this.valEmail.Location = new System.Drawing.Point(140, 279);
             this.valEmail.Name = "valEmail";
-            this.valEmail.Size = new System.Drawing.Size(21, 20);
+            this.valEmail.Size = new System.Drawing.Size(27, 25);
             this.valEmail.TabIndex = 0;
             this.valEmail.Text = "...";
             // 
@@ -181,9 +223,9 @@ namespace GUI
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Gray;
-            this.lblEmail.Location = new System.Drawing.Point(20, 250);
+            this.lblEmail.Location = new System.Drawing.Point(29, 279);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(49, 20);
+            this.lblEmail.Size = new System.Drawing.Size(62, 25);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email:";
             // 
@@ -192,9 +234,9 @@ namespace GUI
             this.valSDT.AutoSize = true;
             this.valSDT.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valSDT.ForeColor = System.Drawing.Color.Black;
-            this.valSDT.Location = new System.Drawing.Point(140, 210);
+            this.valSDT.Location = new System.Drawing.Point(140, 254);
             this.valSDT.Name = "valSDT";
-            this.valSDT.Size = new System.Drawing.Size(21, 20);
+            this.valSDT.Size = new System.Drawing.Size(27, 25);
             this.valSDT.TabIndex = 2;
             this.valSDT.Text = "...";
             // 
@@ -203,9 +245,9 @@ namespace GUI
             this.lblSDT.AutoSize = true;
             this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.ForeColor = System.Drawing.Color.Gray;
-            this.lblSDT.Location = new System.Drawing.Point(20, 210);
+            this.lblSDT.Location = new System.Drawing.Point(6, 254);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(100, 20);
+            this.lblSDT.Size = new System.Drawing.Size(127, 25);
             this.lblSDT.TabIndex = 3;
             this.lblSDT.Text = "Số điện thoại:";
             // 
@@ -216,7 +258,7 @@ namespace GUI
             this.valNgaySinh.ForeColor = System.Drawing.Color.Black;
             this.valNgaySinh.Location = new System.Drawing.Point(140, 170);
             this.valNgaySinh.Name = "valNgaySinh";
-            this.valNgaySinh.Size = new System.Drawing.Size(21, 20);
+            this.valNgaySinh.Size = new System.Drawing.Size(27, 25);
             this.valNgaySinh.TabIndex = 4;
             this.valNgaySinh.Text = "...";
             // 
@@ -227,7 +269,7 @@ namespace GUI
             this.lblNgaySinh.ForeColor = System.Drawing.Color.Gray;
             this.lblNgaySinh.Location = new System.Drawing.Point(20, 170);
             this.lblNgaySinh.Name = "lblNgaySinh";
-            this.lblNgaySinh.Size = new System.Drawing.Size(77, 20);
+            this.lblNgaySinh.Size = new System.Drawing.Size(100, 25);
             this.lblNgaySinh.TabIndex = 5;
             this.lblNgaySinh.Text = "Ngày sinh:";
             // 
@@ -238,7 +280,7 @@ namespace GUI
             this.valGioiTinh.ForeColor = System.Drawing.Color.Black;
             this.valGioiTinh.Location = new System.Drawing.Point(140, 130);
             this.valGioiTinh.Name = "valGioiTinh";
-            this.valGioiTinh.Size = new System.Drawing.Size(21, 20);
+            this.valGioiTinh.Size = new System.Drawing.Size(27, 25);
             this.valGioiTinh.TabIndex = 6;
             this.valGioiTinh.Text = "...";
             // 
@@ -249,7 +291,7 @@ namespace GUI
             this.lblGioiTinh.ForeColor = System.Drawing.Color.Gray;
             this.lblGioiTinh.Location = new System.Drawing.Point(20, 130);
             this.lblGioiTinh.Name = "lblGioiTinh";
-            this.lblGioiTinh.Size = new System.Drawing.Size(68, 20);
+            this.lblGioiTinh.Size = new System.Drawing.Size(88, 25);
             this.lblGioiTinh.TabIndex = 7;
             this.lblGioiTinh.Text = "Giới tính:";
             // 
@@ -260,7 +302,7 @@ namespace GUI
             this.valTen.ForeColor = System.Drawing.Color.Black;
             this.valTen.Location = new System.Drawing.Point(140, 90);
             this.valTen.Name = "valTen";
-            this.valTen.Size = new System.Drawing.Size(21, 20);
+            this.valTen.Size = new System.Drawing.Size(27, 25);
             this.valTen.TabIndex = 8;
             this.valTen.Text = "...";
             // 
@@ -271,7 +313,7 @@ namespace GUI
             this.lblTen.ForeColor = System.Drawing.Color.Gray;
             this.lblTen.Location = new System.Drawing.Point(20, 90);
             this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(76, 20);
+            this.lblTen.Size = new System.Drawing.Size(96, 25);
             this.lblTen.TabIndex = 9;
             this.lblTen.Text = "Họ và tên:";
             // 
@@ -282,7 +324,7 @@ namespace GUI
             this.valMaHV.ForeColor = System.Drawing.Color.Black;
             this.valMaHV.Location = new System.Drawing.Point(140, 50);
             this.valMaHV.Name = "valMaHV";
-            this.valMaHV.Size = new System.Drawing.Size(21, 20);
+            this.valMaHV.Size = new System.Drawing.Size(27, 25);
             this.valMaHV.TabIndex = 10;
             this.valMaHV.Text = "...";
             // 
@@ -293,7 +335,7 @@ namespace GUI
             this.lblMaHV.ForeColor = System.Drawing.Color.Gray;
             this.lblMaHV.Location = new System.Drawing.Point(20, 50);
             this.lblMaHV.Name = "lblMaHV";
-            this.lblMaHV.Size = new System.Drawing.Size(92, 20);
+            this.lblMaHV.Size = new System.Drawing.Size(119, 25);
             this.lblMaHV.TabIndex = 11;
             this.lblMaHV.Text = "Mã học viên:";
             // 
@@ -310,6 +352,7 @@ namespace GUI
             this.btnDangKy.TabIndex = 4;
             this.btnDangKy.Text = "ĐĂNG KÝ KHÓA HỌC";
             this.btnDangKy.UseVisualStyleBackColor = false;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // btnTraCuu
             // 
@@ -327,7 +370,7 @@ namespace GUI
             // 
             // GUI_HV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1140, 825);
@@ -341,6 +384,7 @@ namespace GUI
             this.Name = "GUI_HV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang Chủ Học Viên";
+            this.Load += new System.EventHandler(this.GUI_HV_Load_1);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.gbxLichHoc.ResumeLayout(false);
@@ -377,5 +421,8 @@ namespace GUI
         private System.Windows.Forms.Label valEmail;
         private System.Windows.Forms.Button btnDangKy;
         private System.Windows.Forms.Button btnTraCuu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbldiachi;
+        private System.Windows.Forms.Label valdiachi;
     }
 }
